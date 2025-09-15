@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HKL Pathology Portal</title>
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    .link-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .link-card:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-4px);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .link-card {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo boleh tukar src -->
+    <img src="https://via.placeholder.com/100" alt="HKL Logo" />
+    <h1>HKL Pathology Portal</h1>
+    <p>Quick access to tests, materials & resources</p>
+  </header>
+  <main>
+    <div class="links">
+      <a class="link-card" href="test-directory.html" target="_blank">🔬 Pathology Test Directory</a>
+      <a class="link-card" href="https://example.com/posters" target="_blank">🖼️ Posters & Infographics</a>
+      <a class="link-card" href="https://example.com/videos" target="_blank">🎥 Learning Videos</a>
+      <a class="link-card" href="https://example.com/resources" target="_blank">📂 Learning Materials</a>
+    </div>
+  </main>
+  <footer>
+    Designed by Fahim Hamdan
+  </footer>
+</body>
+</html>
